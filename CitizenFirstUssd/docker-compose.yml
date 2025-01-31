@@ -1,0 +1,8 @@
+﻿services:
+  citizen-first-core:
+    image: "citizen-first-core:v${VERSION}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9030:8080"
